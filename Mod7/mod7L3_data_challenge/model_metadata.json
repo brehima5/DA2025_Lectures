@@ -1,0 +1,67 @@
+{
+  "model_type": "LightGBM Regressor",
+  "model_version": "1.0",
+  "training_date": "2026-01-12",
+  "feature_columns": [
+    "carat",
+    "cut_encoded",
+    "color_encoded",
+    "clarity_encoded",
+    "depth",
+    "table",
+    "z",
+    "volume"
+  ],
+  "numerical_features": [
+    "carat",
+    "depth",
+    "table",
+    "z",
+    "volume"
+  ],
+  "categorical_features": [
+    "cut_encoded",
+    "color_encoded",
+    "clarity_encoded"
+  ],
+  "cut_order": [
+    "Fair",
+    "Good",
+    "Very Good",
+    "Premium",
+    "Ideal"
+  ],
+  "color_order": [
+    "J",
+    "I",
+    "H",
+    "G",
+    "F",
+    "E",
+    "D"
+  ],
+  "clarity_order": [
+    "I1",
+    "SI2",
+    "SI1",
+    "VS2",
+    "VS1",
+    "VVS2",
+    "VVS1",
+    "IF"
+  ],
+  "performance_metrics": {
+    "test_rmse": 533.6997979480003,
+    "test_mae": 272.1877301542183,
+    "test_r2": 0.9822332617720417,
+    "cv_rmse_mean": 539.699644349388,
+    "cv_rmse_std": 9.291589190565785
+  },
+  "training_data_stats": {
+    "n_samples": 43136,
+    "price_min": 326.0,
+    "price_max": 18806.0,
+    "price_mean": 3926.5314586424333,
+    "price_std": 3983.0790430990783
+  }
+}
